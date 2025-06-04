@@ -5,18 +5,26 @@ This repository contains a tutorial on how to use hierarchical coarse-grained mo
 The tutorial is based on the paper [Navigating Chemical Space: Multi-Level Bayesian Optimization with Hierarchical Coarse-Graining](https://doi.org/10.48550/arXiv.2505.04169).
 
 ## Setup
-To run the tutorial, you first need to clone this repository:
+To run the tutorial, clone this repository:
 
 ```bash
 git clone https://github.com/BereauLab/Molecule-Optimization-w-Hierarchical-Coarse-Graining.git
+cd Molecule-Optimization-w-Hierarchical-Coarse-Graining
 ```
 
-Next, you need to install a few python packages and the molecular dynamics simulation software [GROMACS](https://www.gromacs.org/). See [this page](https://manual.gromacs.org/current/install-guide/index.html) for GROMACS installation instructions. The provided `requirements.txt` file contains the necessary python packages. You can install them using pip:
+Next, a few dependencies are required:
+- [GROMACS](https://www.gromacs.org/): This program is used to run molecular dynamics simulations. See [this page](https://manual.gromacs.org/current/install-guide/index.html) for installation instructions.
 
-```bash
-pip install -r requirements.txt
-```
-It is recommended to create a virtual environment, e.g. using [`venv`](https://docs.python.org/3/library/venv.html) or [`uv`](https://docs.astral.sh/uv/).
+- Python packages: The provided `requirements.txt` file lists the necessary python packages. You can install them using pip:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+    It is recommended to use Python 3.11 and to create a virtual environment, e.g. using [`venv`](https://docs.python.org/3/library/venv.html) or [`uv`](https://docs.astral.sh/uv/).
 
 ## Running the Tutorial
-To run the tutorial, launch the Jupyter notebook [Tutorial_on_Coarse_Grained_Molecular_Optimization.ipynb](Tutorial_on_Coarse_Grained_Molecular_Optimization.ipynb) in a Jupyter environment. 
+To run the tutorial, launch the Jupyter notebook [Tutorial_on_Coarse_Grained_Molecular_Optimization.ipynb](Tutorial_on_Coarse_Grained_Molecular_Optimization.ipynb) in a Jupyter environment, e.g. using the command:
+
+```bash
+jupyter lab Tutorial_on_Coarse_Grained_Molecular_Optimization.ipynb
+```
